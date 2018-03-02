@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnStartColor"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Start color"
+            android:textSize="14sp"
+            />
+
+        <EditText
+            android:id="@+id/edtStartColor"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="red"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bg_frame"
+        android:padding="2dp"
+        >
+
+        <View
+            android:id="@+id/bgStartColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnEndColor"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="End color"
+            android:textSize="14sp"
+            />
+
+        <EditText
+            android:id="@+id/edtEndColor"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="blue"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bg_frame"
+        android:padding="2dp"
+        >
+
+        <View
+            android:id="@+id/bgEndColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnTransfer"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Start transfer"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MaxProgress:"
+                    />
+
+                <EditText
+                    android:id="@+id/edtMaxProgress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Max Progress"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:text="100"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Duration:"
+                    />
+
+                <EditText
+                    android:id="@+id/edtDuration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Duration"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:text="1000"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_frame"
+        android:padding="2dp"
+        >
+
+        <View
+            android:id="@+id/bgResultColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_frame"
+        android:padding="2dp"
+        >
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>
