@@ -1,4 +1,4 @@
-# MultipleStateView
+# SmoothColor
 
 
 ##### Maven
